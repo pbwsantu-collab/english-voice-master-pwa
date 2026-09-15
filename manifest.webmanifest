@@ -1,0 +1,10 @@
+{
+  "name": "VOICE CHANGE MASTER",
+  "short_name": "VoiceMaster",
+  "description": "Learn Active & Passive Voice for Bengali-medium students",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f0f7ff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary"
+}
