@@ -4,34 +4,35 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
 <meta name="theme-color" content="#2563eb"/>
-<title>VOICE CHANGE MASTER — Complete 191–206</title>
+<title>VOICE CHANGE MASTER — 200+ Q · Exam Mode</title>
 <link rel="manifest" href="manifest.webmanifest"/>
 <style>
-:root{--bg:#f0f7ff;--card:#fff;--text:#0f172a;--p:#2563eb;--ok:#059669;--bn:#0f766e;--mut:#64748b;--bd:#e2e8f0;--warn:#fef3c7;--warnt:#92400e}
+:root{--bg:#f0f7ff;--card:#fff;--text:#0f172a;--p:#2563eb;--ok:#059669;--bn:#0f766e;--mut:#64748b;--bd:#e2e8f0;--warn:#fef3c7;--warnt:#92400e;--bad:#dc2626}
 *{box-sizing:border-box;margin:0;padding:0}body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans Bengali',sans-serif;background:var(--bg);color:var(--text);line-height:1.5;min-height:100dvh}
 .app{max-width:720px;margin:0 auto;padding-bottom:76px;min-height:100dvh;display:flex;flex-direction:column}
 header{background:linear-gradient(135deg,#1e40af,#2563eb);color:#fff;padding:12px 14px;position:sticky;top:0;z-index:20}
 header h1{font-size:1.1rem;font-weight:800}header p{font-size:.72rem;opacity:.9}
-.main{flex:1;padding:12px}.hero{text-align:center;padding:12px 4px}
-.hero h2{font-size:1.25rem;color:var(--p)}
+.main{flex:1;padding:12px}.hero{text-align:center;padding:12px 4px}.hero h2{font-size:1.25rem;color:var(--p)}
 .cards{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
 .card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px 6px;font-size:.82rem;font-weight:700;cursor:pointer;text-align:center}
 .card span{display:block;font-size:1.2rem;margin-bottom:2px}
 .panel{display:none}.panel.active{display:block}
 .box{background:var(--card);border-radius:11px;padding:12px;border:1px solid var(--bd);margin-bottom:10px}
 .box h3{color:var(--p);margin-bottom:6px;font-size:.95rem}
-.bn{color:var(--bn);font-size:.85rem;margin-top:4px}
-.formula{background:linear-gradient(135deg,#dbeafe,#e0f2fe);color:#1e3a8a;padding:12px;border-radius:11px;text-align:center;font-weight:700;margin:10px 0}
+.bn{color:var(--bn);font-size:.85rem}.formula{background:linear-gradient(135deg,#dbeafe,#e0f2fe);color:#1e3a8a;padding:12px;border-radius:11px;text-align:center;font-weight:700;margin:10px 0}
 .ex{background:#f8fafc;border-radius:8px;padding:8px 10px;margin:6px 0;border-left:3px solid var(--p);font-size:.88rem}
 .ex .pas{color:var(--ok);margin-top:2px;font-weight:600}
 .warning{background:var(--warn);color:var(--warnt);padding:9px;border-radius:8px;font-weight:600;margin-bottom:10px;border:1px solid #fbbf24;font-size:.85rem}
 table{width:100%;border-collapse:collapse;font-size:.78rem;margin:8px 0}th,td{border:1px solid var(--bd);padding:5px 3px}th{background:var(--p);color:#fff}
-.btn-sm{background:var(--p);color:#fff;border:none;padding:5px 10px;border-radius:7px;font-weight:700;cursor:pointer;font-size:.78rem}
+.btn,.btn-sm{background:var(--p);color:#fff;border:none;padding:8px 14px;border-radius:8px;font-weight:700;cursor:pointer;font-size:.85rem}
+.btn-sm{padding:5px 10px;font-size:.78rem}.btn-ok{background:var(--ok)}.btn-bad{background:var(--bad)}
 .nav-pills{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px}
 .nav-pills button{padding:4px 8px;border-radius:14px;border:1px solid var(--bd);background:var(--card);cursor:pointer;font-size:.72rem}
 .nav-pills button.on{background:var(--p);color:#fff;border-color:var(--p)}
 .q-item{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:10px;margin:8px 0;font-size:.88rem}
 .ans{margin-top:6px;padding:8px;background:#ecfdf5;border-radius:7px;border:1px solid #a7f3d0;font-size:.82rem;display:none}.ans.show{display:block}
+.mark{display:inline-block;background:#dbeafe;color:#1e40af;font-size:.7rem;font-weight:700;padding:1px 6px;border-radius:4px;margin-left:4px}
+.type{display:inline-block;background:#f1f5f9;color:#475569;font-size:.68rem;padding:1px 5px;border-radius:4px;margin-left:4px}
 .bottom{position:fixed;bottom:0;left:0;right:0;max-width:720px;margin:0 auto;display:flex;background:var(--card);border-top:1px solid var(--bd);z-index:30;padding-bottom:env(safe-area-inset-bottom)}
 .bottom button{flex:1;padding:9px 1px;border:none;background:none;color:var(--mut);font-size:.62rem;font-weight:700;cursor:pointer}.bottom button.on{color:var(--p)}
 .step{background:#f0f9ff;border-radius:8px;padding:8px;margin:6px 0;border-left:3px solid #0ea5e9;font-size:.82rem}
@@ -40,68 +41,52 @@ summary{font-weight:700;cursor:pointer;color:var(--p);font-size:.88rem}
 .ok{display:inline-block;background:#dcfce7;color:#166534;padding:1px 6px;border-radius:5px;font-size:.7rem;font-weight:700}
 pre{white-space:pre-wrap;background:#f8fafc;padding:10px;border-radius:8px;font-size:.85rem}
 h2.sec{color:var(--p);margin:0 0 8px;font-size:1.1rem}
-.note{font-size:.8rem;color:var(--mut);font-style:italic}
+.score-bar{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:10px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
+.score-bar b{color:var(--p);font-size:1.1rem}
+.exam-setup label{display:block;margin:6px 0;font-size:.88rem}
+.exam-setup select,.exam-setup input{padding:6px 8px;border:1px solid var(--bd);border-radius:6px;margin-left:6px}
+.result-box{text-align:center;padding:20px;background:var(--card);border-radius:12px;border:2px solid var(--p)}
+.result-box .big{font-size:2rem;font-weight:800;color:var(--p)}
 </style>
 </head>
 <body>
 <div class="app">
-<header><h1>VOICE CHANGE MASTER</h1><p>Complete · §§191–206 · All exercises · বাংলা · Nothing left out</p></header>
+<header><h1>VOICE CHANGE MASTER</h1><p>200+ Q · Marks · Exam Mode · §§191–206</p></header>
 <main class="main">
 
 <section id="home" class="panel active">
 <div class="hero"><h2>Master Active &amp; Passive Voice</h2>
-<p style="color:var(--mut);font-size:.85rem">WBBSE · WBCHSE · বাংলা মাধ্যম · Full textbook</p></div>
+<p style="color:var(--mut);font-size:.85rem">WBBSE · বাংলা · 200+ questions · Exam ready</p></div>
 <div class="cards">
 <button class="card" onclick="go('learn')"><span>📘</span>Learn 191–206</button>
 <button class="card" onclick="go('rules')"><span>🧠</span>Rules + বাংলা</button>
-<button class="card" onclick="go('examples')"><span>📝</span>All Examples</button>
-<button class="card" onclick="go('tense')"><span>⏱️</span>Tense Chart</button>
-<button class="card" onclick="go('special')"><span>⚠️</span>Special Cases</button>
-<button class="card" onclick="go('worked')"><span>✅</span>Worked + Literary</button>
-<button class="card" onclick="go('practice')"><span>⚡</span>Practice</button>
+<button class="card" onclick="go('examples')"><span>📝</span>Examples</button>
+<button class="card" onclick="go('tense')"><span>⏱️</span>Tense</button>
+<button class="card" onclick="go('special')"><span>⚠️</span>Special</button>
+<button class="card" onclick="go('bank')"><span>📚</span>Q Bank 200+</button>
+<button class="card" onclick="go('exam')"><span>📝</span>Exam Mode</button>
 <button class="card" onclick="go('exercises')"><span>🎯</span>Ex 20–22</button>
 </div>
-<div class="box"><h3>Completeness</h3>
-<p><span class="ok">✓</span> 191–206 every section · <span class="ok">✓</span> All tense examples</p>
-<p><span class="ok">✓</span> Interrogative 3-step · who→by whom · Two objects</p>
-<p><span class="ok">✓</span> Complex · Cognate · Group verbs · Double passive</p>
-<p><span class="ok">✓</span> Reflexive/Factitive/Adverbial/Avail · Imperative · Infinitive</p>
-<p><span class="ok">✓</span> Quasi-passive · Misc · When to use (a–g)</p>
-<p><span class="ok">✓</span> Worked A↔P · Literary 15 · Newspaper groups</p>
-<p><span class="ok">✓</span> Ex20(19) · Ex21(15) · Ex22A(23) · Ex22B(9 passages)</p>
+<div class="box"><h3>Question Bank</h3>
+<p><span class="ok">✓</span> <b id="qcount">200+</b> questions · all types · marks</p>
+<p><span class="ok">✓</span> Exam Mode · Practice by type · Click = Answer</p>
 </div></section>
 
-<section id="learn" class="panel"><h2 class="sec">Learn — All Sections</h2>
-<div class="nav-pills" id="lnav"></div><div id="lbody"></div></section>
-
+<section id="learn" class="panel"><h2 class="sec">Learn</h2><div class="nav-pills" id="lnav"></div><div id="lbody"></div></section>
 <section id="rules" class="panel"><h2 class="sec">Rules &amp; বাংলা</h2>
-<div class="formula">ACTIVE: Subject + Verb + Object<br>↓<br>PASSIVE: Object + be + V3 + by + Subject</div>
-<div class="box"><h3>§194 Three Rules</h3>
-<ol style="padding-left:16px;font-size:.88rem">
-<li><b>Object → Subject</b><br><span class="bn">Active-এর Object → Passive Subject</span></li>
-<li style="margin-top:6px"><b>Subject → Object (+by)</b><br><span class="bn">Active Subject → Passive Object, সাধারণত by</span></li>
-<li style="margin-top:6px"><b>Verb → be + V3</b><br><span class="bn">Past Participle + to be-এর রূপ</span></li></ol></div>
-<div class="box"><h3>বাংলা পরিভাষা</h3>
-<div class="ex"><b>Active / কর্তৃবাচ্য</b> — Subject নিজে কাজ করে</div>
-<div class="ex"><b>Passive / কর্মবাচ্য</b> — Subject-এর উপর কাজ হয়</div>
-<div class="ex"><b>Subject=কর্তা · Object=কর্ম · V3=Past Participle</b></div>
-<div class="ex"><b>who → by whom</b> · <b>Retained Object</b> · <b>Perfect Continuous = no Passive</b></div></div>
-<div class="box"><h3>Interrogative 3-Step</h3>
-<div class="step">1.Assertive → 2.Passive → 3.Interrogative</div>
-<div class="ex">Do you know him? → You know him. → He is known to you. → <span class="pas">Is he known to you?</span></div>
-<div class="ex">Did he take tea? → He took tea. → Tea was taken by him. → <span class="pas">Was tea taken by him?</span></div>
-<p class="note">who (Active) → by whom (Passive)</p></div>
-<div class="box"><h3>Pronouns</h3>
-<table><tr><th>I</th><td>me</td><th>we</th><td>us</td></tr>
-<tr><th>he</th><td>him</td><th>she</th><td>her</td></tr>
-<tr><th>they</th><td>them</td><th>who</th><td>whom/by whom</td></tr></table></div>
+<div class="formula">ACTIVE → Subject + Verb + Object<br>PASSIVE → Object + be + V3 + by + Subject</div>
+<div class="box"><h3>§194</h3><ol style="padding-left:16px;font-size:.88rem"><li>Object → Subject</li><li>Subject → Object (+by)</li><li>Verb → be + V3</li></ol>
+<p class="bn">Object→Subject; Subject→by+Object; be+V3</p></div>
+<div class="box"><h3>বাংলা</h3>
+<div class="ex">Active=কর্তৃবাচ্য · Passive=কর্মবাচ্য · who→by whom</div>
+<div class="ex">Perfect Continuous = Passive নেই</div></div>
+<div class="box"><h3>3-Step Interrogative</h3>
+<div class="step">Assertive → Passive → Interrogative</div>
+<div class="ex">Do you know him? → Is he known to you?</div></div>
 </section>
-
-<section id="examples" class="panel"><h2 class="sec">Complete Examples</h2>
-<div class="nav-pills" id="epills"></div><div id="ebody"></div></section>
-
-<section id="tense" class="panel"><h2 class="sec">Tense §196</h2>
-<div class="warning">⚠ Perfect Continuous — NO Passive form. Future Continuous — no Passive.</div>
+<section id="examples" class="panel"><h2 class="sec">Examples</h2><div class="nav-pills" id="epills"></div><div id="ebody"></div></section>
+<section id="tense" class="panel"><h2 class="sec">Tense</h2>
+<div class="warning">⚠ Perfect Continuous — no Passive</div>
 <table><tr><th>Tense</th><th>Active</th><th>Passive</th></tr>
 <tr><td>Simple Present</td><td>do/does</td><td>is/am/are+done</td></tr>
 <tr><td>Present Cont.</td><td>am/is/are doing</td><td>am/is/are+being+done</td></tr>
@@ -110,101 +95,441 @@ h2.sec{color:var(--p);margin:0 0 8px;font-size:1.1rem}
 <tr><td>Past Cont.</td><td>was/were doing</td><td>was/were+being+done</td></tr>
 <tr><td>Past Perfect</td><td>had done</td><td>had+been+done</td></tr>
 <tr><td>Simple Future</td><td>will/shall do</td><td>will/shall+be+done</td></tr>
-<tr><td>Future Cont.</td><td>will be doing</td><td><i>no form</i></td></tr>
 <tr><td>Future Perfect</td><td>will have done</td><td>will+have+been+done</td></tr>
-<tr><td>Modals</td><td>can/may/must+do</td><td>can/may/must+be+done</td></tr></table>
-<div class="box"><h3>Textbook pairs</h3>
-<div class="ex">I do it. → <span class="pas">It is done by me.</span></div>
-<div class="ex">I am doing it. → <span class="pas">It is being done by me.</span></div>
-<div class="ex">I have done it. → <span class="pas">It has been done by me.</span></div>
-<div class="ex">I did it. → <span class="pas">It was done by me.</span></div>
-<div class="ex">I was doing it. → <span class="pas">It was being done by me.</span></div>
-<div class="ex">I had done it. → <span class="pas">It had been done by me.</span></div>
-<div class="ex">I shall do it. → <span class="pas">It will be done by me.</span></div>
-<div class="ex">I shall be doing it. → <span class="pas">(no form)</span></div>
-<div class="ex">I shall have done it. → <span class="pas">It will have been done by me.</span></div>
-</div></section>
+<tr><td>Modals</td><td>can/must+do</td><td>can/must+be+done</td></tr></table>
+</section>
+<section id="special" class="panel"><h2 class="sec">Special</h2><div id="sbody"></div></section>
 
-<section id="special" class="panel"><h2 class="sec">Special Cases §§197–205</h2><div id="sbody"></div></section>
-<section id="worked" class="panel"><h2 class="sec">Worked + Literary + Groups</h2>
-<div class="nav-pills"><button class="on" onclick="sw('a2p',this)">A→P</button><button onclick="sw('p2a',this)">P→A</button><button onclick="sw('lit',this)">Literary</button><button onclick="sw('grp',this)">News</button></div>
-<div id="wbody"></div></section>
-<section id="practice" class="panel"><h2 class="sec">Practice</h2><p style="font-size:.85rem;color:var(--mut)">Score: <b id="sc">0/0</b></p><div id="pbody"></div></section>
-<section id="exercises" class="panel"><h2 class="sec">Exercises</h2>
-<details open><summary>Exercise 20 (19)</summary><div id="x20"></div></details>
-<details><summary>Exercise 21 (15)</summary><div id="x21"></div></details>
-<details><summary>Exercise 22(A) (23)</summary><div id="x22a"></div></details>
-<details><summary>Exercise 22(B) Fill blanks</summary><div id="x22b"></div></details>
+<!-- QUESTION BANK -->
+<section id="bank" class="panel">
+<h2 class="sec">Question Bank (<span id="bankN">0</span>)</h2>
+<div class="score-bar"><span>Filter:</span>
+<div class="nav-pills" id="bfilter"></div>
+</div>
+<div id="bbody"></div>
+</section>
+
+<!-- EXAM MODE -->
+<section id="exam" class="panel">
+<h2 class="sec">Exam Mode</h2>
+<div id="examSetup" class="box exam-setup">
+<p style="margin-bottom:8px">Choose paper · Marks · Timer optional</p>
+<label>Type:
+<select id="examType">
+<option value="mix">Mixed (all types)</option>
+<option value="present">Present</option>
+<option value="past">Past</option>
+<option value="future">Future</option>
+<option value="modal">Modals</option>
+<option value="inter">Questions</option>
+<option value="imp">Imperative</option>
+<option value="inf">Infinitive</option>
+<option value="prep">Preposition</option>
+<option value="twoobj">Two objects</option>
+<option value="p2a">Passive → Active</option>
+</select></label>
+<label>Questions: <select id="examN"><option>10</option><option>15</option><option selected>20</option><option>25</option><option>50</option></select></label>
+<label>Marks each: <select id="examM"><option>1</option><option selected>2</option><option>5</option></select></label>
+<label>Show answers after each? <input type="checkbox" id="examShow" checked/></label>
+<button class="btn" style="margin-top:10px;width:100%" onclick="startExam()">Start Exam</button>
+</div>
+<div id="examRun" style="display:none">
+<div class="score-bar">
+<span>Q <b id="eqN">1</b>/<span id="eqT">20</span></span>
+<span>Score: <b id="eScore">0</b>/<span id="eMax">40</span></span>
+<span id="eTimer"></span>
+</div>
+<div id="eqBody"></div>
+<div style="display:flex;gap:8px;margin-top:10px">
+<button class="btn btn-ok" onclick="examMark(1)">✓ Correct</button>
+<button class="btn btn-bad" onclick="examMark(0)">✗ Wrong</button>
+<button class="btn-sm" onclick="examShowAns()">Show Answer</button>
+</div>
+</div>
+<div id="examResult" style="display:none"></div>
+</section>
+
+<section id="exercises" class="panel"><h2 class="sec">Textbook Exercises</h2>
+<details open><summary>Exercise 20</summary><div id="x20"></div></details>
+<details><summary>Exercise 21</summary><div id="x21"></div></details>
+<details><summary>Exercise 22(A)</summary><div id="x22a"></div></details>
+<details><summary>Exercise 22(B)</summary><div id="x22b"></div></details>
 </section>
 </main>
 <nav class="bottom">
 <button class="on" id="nav-home" onclick="go('home')">Home</button>
 <button id="nav-learn" onclick="go('learn')">Learn</button>
-<button id="nav-examples" onclick="go('examples')">Examples</button>
-<button id="nav-special" onclick="go('special')">Special</button>
-<button id="nav-exercises" onclick="go('exercises')">Exercises</button>
+<button id="nav-bank" onclick="go('bank')">Q Bank</button>
+<button id="nav-exam" onclick="go('exam')">Exam</button>
+<button id="nav-exercises" onclick="go('exercises')">Ex 20–22</button>
 </nav>
 </div>
 <script>
-const L={
-191:{t:'§191 What is Voice?',en:'The hunter killed the lion.\nThe lion was killed by the hunter.\n\nSame meaning, different form.\nHunter = doer → Active.\nLion = receiver → Passive.',bn:'কর্তা→কর্তৃবাচ্য; প্রাপক→কর্মবাচ্য'},
-192:{t:'§192 Definition',en:'Voice is the form of the verb which shows whether the Subject acts or is acted upon.',bn:'Subject কাজ করে নাকি তার উপর কাজ হয়'},
-193:{t:'§193 Two Voices',en:'Active (কর্তৃবাচ্য): He runs. I did it. He said this.\nPassive (কর্মবাচ্য): It was done by me. This was said by him.',bn:'কর্তা=Active; প্রাপক=Passive'},
-194:{t:'§194 Rules',en:'1. Object → Subject\n2. Subject → Object (+by)\n3. Verb → be + Past Participle (V3)',bn:'Object→Subject; Subject→by+Object; be+V3'},
-195:{t:'§195 Basic',en:'The hunter | killed | the lion\n→ The lion | was killed by | the hunter\n\nRani reads a book. → A book is read by Rani.\nHe did the job. → The job was done by him.',bn:'Subject-Object বিনিময় + be + V3'},
-196:{t:'§196 Tenses',en:'See Tense Chart tab.\nPerfect Continuous: NO passive.\nFuture Continuous: no passive form.',bn:'Perfect Continuous Passive নেই'},
-197:{t:'§197 Notes',en:'Only Transitive verbs normally → Passive.\nUnnatural: "A nice dinner was had by us" — avoid.\nOther prepositions: annoyed at, pleased with, charmed at, filled with, known to, surprised at.\nImplied agent: It is said… → Men say…; My book has been lost → I have lost…',bn:'by ছাড়া অন্য preposition; implied agent'},
-198:{t:'§198 Two objects',en:'He gave me a book.\n→ I was given a book by him.\n→ A book was given me by him.\n(Retained object)',bn:'যেকোনো Object Subject হতে পারে'},
-199:{t:'§199 Complex',en:'Change BOTH clauses.\nI know that he did the work.\n→ It is known to me that the work was done by him.\nWhat cannot be cured must be endured.\n→ We must endure what we cannot cure.',bn:'Principal + Subordinate উভয়'},
-200:{t:'§200 Intransitive exceptions',en:'Cognate: The battle was fought… The race was run…\nGroup: They laugh at us → We are laughed at by them.\nHe dispensed with my services → My services were dispensed with by him.',bn:'Cognate object; preposition থাকে'},
-201:{t:'§201 Double passive AVOID',en:'✗ The evil was sought to be corrected.\n✓ They sought to correct the evil.\n✗ A meeting was proposed to be held.\n✓ They proposed to hold a meeting / It was proposed…',bn:'Double passive এড়াও'},
-202:{t:'§202 Cannot be Passive subject',en:'Reflexive: He killed himself — do NOT make Himself subject. Prefer Active.\nAvail: He availed himself of my offer — NOT "My offer was availed of".\nFactitive: They made him king → He was made king by them.\nAdverbial: He worked an hour — NOT "An hour was worked".',bn:'Reflexive/adverbial Subject হয় না; avail সাবধান'},
-203:{t:'§203 Imperatives',en:'Let + object + be + V3\nDo it → Let it be done.\nTell him to go → Let him be told to go / He should be told to go.\nKeep your word → Your word should be kept.\nPut up a tent → Have a tent put up.\nPlease keep off the grass → You are requested to keep off the grass.\nEnter by this door → You are requested to enter by this door.\nHelp the poor → The poor should be helped.\nTake the medicine regularly → The medicine should be taken regularly.',bn:'Let+be+V3; request→requested/should'},
-204:{t:'§204 Infinitive',en:'to+V1 → to+be+V3\nI am to buy a book → A book is to be bought by me.\nI have to do the work → The work has to be done by me.\nIt is time to tell him the truth → It is time for the truth to be told to him.\nYou are to post the letters today → The letters are to be posted by you today.\nHe has no money to spend → There is no money to be spent by him.',bn:'to + be + V3'},
-205:{t:'§205 Quasi-passive / Middle',en:'Active form, passive sense:\nThis book reads well. It tastes sweet. This book is printing.\nThe cows are milking. The rose smells sweet. The house is building. The floor feels smooth.\n\nHe is gone / He is come are NOT passive (go/come intransitive). Alternatives to has gone/has come (state vs time).',bn:'Active form, Passive অর্থ; is gone ≠ Passive'},
-206:{t:'§206 When to use Passive',en:'(a) Performer not necessary — textiles are made in India\n(b) Prefer not to name doer — Ram was told…\n(c) Emphasise receiver — A man was knocked down…\n(d) Historical — America was discovered by Columbus\n(e) Requests — Passengers are requested not to smoke\n(f) Newspaper — Calcutta was lashed by a thunder shower\n(g) Scientific — mixture is compressed by a piston',bn:'কর্তা অপ্রয়োজন/গোপন/প্রাপক গুরুত্ব/ঐতিহাসিক/অনুরোধ/সংবাদ/বিজ্ঞান'}
-};
-const EX={
-basic:[['The hunter killed the lion.','The lion was killed by the hunter.'],['Rani reads a book.','A book is read by Rani.'],['He did the job.','The job was done by him.']],
-present:[['Children like sweets.','Sweets are liked by children.'],['He sells fish in the market.','Fish is sold by him in the market.'],['She loves me.','I am loved by her.'],['I help him.','He is helped by me.'],['I am reading a book.','A book is being read by me.'],['They are drawing pictures.','Pictures are being drawn by them.'],['She is cooking rice in the kitchen.','Rice is being cooked by her in the kitchen.'],['Are you writing a letter?','Is a letter being written by you?'],['I have seen him.','He has been seen by me.'],['The girls have sent the flowers.','The flowers have been sent by the girls.'],['Partha has written these letters.','These letters have been written by Partha.'],['They have brought the statue from Kolkata.','The statue has been brought by them from Kolkata.']],
-past:[['He did it.','It was done by him.'],['They bought toys.','Toys were bought by them.'],['She helped me.','I was helped by her.'],['He stole my book.','My book was stolen by him.'],['I was doing the work.','The work was being done by me.'],['He was reading a book.','A book was being read by him.'],['They were calling the boys.','The boys were being called by them.'],['Were the boys throwing stones?','Were stones being thrown by the boys?'],['They had done the work.','The work had been done by them.'],['We had won the match.','The match had been won by us.'],['She had sewn the cloth.','The cloth had been sewn by her.'],['Had you lent the book?','Had the book been lent by you?']],
-future:[['I shall do it.','It shall/will be done by me.'],['He will do the work.','The work will be done by him.'],['I shall buy a house.','A house will be bought by me.'],['He will not hurt you.','You will not be hurt by him.'],['Shall we help her?','Will she be helped by us?'],['Mr Roy will have taught this class.','This class will have been taught by Mr Roy.'],['I shall have written the letter.','The letter will have been written by me.'],['She will have drawn the picture.','The picture will have been drawn by her.']],
-modal:[['He can do the work.','The work can be done by him.'],['We may help her.','She may be helped by us.'],['You must take this medicine.','This medicine must be taken by you.'],['The boy should read the book.','The book should be read by the boy.'],['He might take your help.','Your help might be taken by him.']],
-inter:[['Do you know him?','Is he known to you?'],['Does he want this?','Is this wanted by him?'],['Did he take tea?','Was tea taken by him?'],['Was he taking tea?','Was tea being taken by him?'],['Are you reading the book?','Is the book being read by you?'],['Have you done the work?','Has the work been done by you?'],['Where did you see him?','Where was he seen by you?'],['Who will do the work?','By whom will the work be done?'],['What did they do?','What was done by them?'],['Why have you bought this?','Why has this been bought by you?']],
-imp:[['Do it.','Let it be done.'],['Tell him to go.','Let him be told to go. / He should be told to go.'],['Keep your word.','Your word should be kept.'],['Put up a tent.','Have a tent put up.'],['Please keep off the grass.','You are requested to keep off the grass.'],['Enter by this door.','You are requested to enter by this door.'],['Help the poor.','The poor should be helped.'],['Take the medicine regularly.','The medicine should be taken regularly.']],
-inf:[['I am to buy a book.','A book is to be bought by me.'],['I have to do the work.','The work has to be done by me.'],['It is time to tell him the truth.','It is time for the truth to be told to him.'],['You are to post the letters today.','The letters are to be posted by you today.'],['He has no money to spend.','There is no money to be spent by him.']],
-prep:[['His conduct annoyed me.','I was annoyed at his conduct.'],['This news will please you.','You will be pleased with this news.'],['His behaviour charmed me.','I was charmed at his behaviour.'],['Smoke filled the room.','The room was filled with smoke.'],['I know him.','He is known to me.'],['His result surprised me.','I was surprised at his result.']],
-implied:[['It is said he will come.','Men say he will come.'],['He is expected soon.','We expect him soon.'],['My book has been lost.','I have lost my book.'],['The house was blown down.','The storm blew down the house.'],['The lion is called the king of beasts.','People call the lion the king of beasts.'],['The shed was burnt to ashes.','Fire burnt the shed to ashes.'],['The injured were taken to a hospital.','They took the injured to a hospital.']],
-misc:[['A promise should be kept.','One should keep one\'s promise.'],['My pen has been stolen.','Someone has stolen my pen.'],['I was obliged to go.','Circumstances obliged me to go.'],['Nothing can be gained without labour.','We can gain nothing without labour.'],['Why was he refused admittance?','Why did they refuse him admittance?'],['Indiscipline should not be encouraged.','We should not encourage indiscipline.']]
-};
-const SP=[
-{h:'§197 Other prepositions',x:EX.prep},
-{h:'§197 Implied agent',x:EX.implied},
-{h:'§198 Two objects',txt:'He gave me a book.\n→ I was given a book by him.\n→ A book was given me by him.'},
-{h:'§199 Complex',txt:'I know that he did the work.\n→ It is known to me that the work was done by him.\nWhat cannot be cured must be endured.\n→ We must endure what we cannot cure.'},
-{h:'§200 Cognate / Group',txt:'The battle was fought at this place.\nThey laugh at us → We are laughed at by them.\nHe dispensed with my services → My services were dispensed with by him.'},
-{h:'§201 Double passive — AVOID',txt:'✗ The evil was sought to be corrected.\n✓ They sought to correct the evil.\n✗ A meeting was proposed to be held.\n✓ They proposed to hold a meeting.'},
-{h:'§202 Reflexive / Factitive / Adverbial / Avail',txt:'He killed himself — keep Active.\nThey made him king → He was made king by them.\nHe worked an hour — no Passive.\nAvail: NOT "My offer was availed of by him".'},
-{h:'§205 Quasi-passive',txt:'This book reads well. It tastes sweet. This book is printing.\nThe cows are milking. The rose smells sweet. The house is building.\nHe is gone / He is come = NOT Passive.'}
+/* ===== FULL LESSON DATA (compact) ===== */
+const L={191:{t:'§191 Voice',en:'Hunter killed lion → Lion was killed by hunter.\nDoer=Active; Receiver=Passive',bn:'কর্তা→কর্তৃবাচ্য; প্রাপক→কর্মবাচ্য'},192:{t:'§192 Def',en:'Voice shows if Subject acts or is acted upon.',bn:'Subject কাজ করে নাকি তার উপর কাজ হয়'},193:{t:'§193 Two',en:'Active: He runs. Passive: It was done by me.',bn:'কর্তা=Active; প্রাপক=Passive'},194:{t:'§194 Rules',en:'1.Object→Subject 2.Subject→Object(+by) 3.be+V3',bn:'Object→Subject; by+Object; be+V3'},195:{t:'§195 Basic',en:'Rani reads a book → A book is read by Rani.',bn:'Subject-Object বিনিময়'},196:{t:'§196 Tense',en:'See Tense tab. Perfect Continuous = no Passive.',bn:'Perfect Continuous Passive নেই'},197:{t:'§197 Notes',en:'Transitive only. known to, pleased with, annoyed at…',bn:'by ছাড়া অন্য preposition'},198:{t:'§198 Two obj',en:'He gave me a book → I was given… / A book was given me…',bn:'Retained object'},199:{t:'§199 Complex',en:'Change both clauses. I know that he did it → It is known… was done…',bn:'উভয় clause'},200:{t:'§200 Group',en:'laugh at → are laughed at. Cognate: battle was fought.',bn:'preposition থাকে'},201:{t:'§201 Double',en:'AVOID: was sought to be corrected. Prefer Active.',bn:'Double passive এড়াও'},202:{t:'§202 Reflex',en:'Himself cannot be Passive subject. Avail needs reflexive.',bn:'Reflexive Subject নয়'},203:{t:'§203 Imper',en:'Do it → Let it be done. Help the poor → should be helped.',bn:'Let+be+V3'},204:{t:'§204 Inf',en:'to do → to be done. I have to do it → has to be done.',bn:'to+be+V3'},205:{t:'§205 Quasi',en:'reads well / tastes sweet. He is gone ≠ Passive.',bn:'is gone Passive নয়'},206:{t:'§206 Use',en:'(a)no doer (b)hide doer (c)emphasise receiver (d)history (e)request (f)news (g)science',bn:'কখন Passive'}};
+
+/* ===== 200+ QUESTION BANK =====
+   q, a, type, m (marks) */
+const BANK=[
+/* Present Simple */
+{q:'Children like sweets.',a:'Sweets are liked by children.',t:'present',m:1},
+{q:'He sells fish in the market.',a:'Fish is sold by him in the market.',t:'present',m:1},
+{q:'She loves me.',a:'I am loved by her.',t:'present',m:1},
+{q:'I help him.',a:'He is helped by me.',t:'present',m:1},
+{q:'They play football.',a:'Football is played by them.',t:'present',m:1},
+{q:'Rani reads a book.',a:'A book is read by Rani.',t:'present',m:1},
+{q:'The girl knows it.',a:'It is known by/to the girl.',t:'present',m:1},
+{q:'We respect our teachers.',a:'Our teachers are respected by us.',t:'present',m:1},
+{q:'He teaches English.',a:'English is taught by him.',t:'present',m:1},
+{q:'Birds build nests.',a:'Nests are built by birds.',t:'present',m:1},
+/* Present Cont */
+{q:'I am reading a book.',a:'A book is being read by me.',t:'present',m:1},
+{q:'They are drawing pictures.',a:'Pictures are being drawn by them.',t:'present',m:1},
+{q:'She is cooking rice.',a:'Rice is being cooked by her.',t:'present',m:1},
+{q:'Are you writing a letter?',a:'Is a letter being written by you?',t:'present',m:2},
+{q:'The boys are flying kites.',a:'Kites are being flown by the boys.',t:'present',m:1},
+/* Present Perfect */
+{q:'I have seen him.',a:'He has been seen by me.',t:'present',m:1},
+{q:'The girls have sent the flowers.',a:'The flowers have been sent by the girls.',t:'present',m:1},
+{q:'Partha has written these letters.',a:'These letters have been written by Partha.',t:'present',m:1},
+{q:'They have brought the statue from Kolkata.',a:'The statue has been brought by them from Kolkata.',t:'present',m:1},
+{q:'She has finished the work.',a:'The work has been finished by her.',t:'present',m:1},
+{q:'We have completed the project.',a:'The project has been completed by us.',t:'present',m:1},
+/* Past Simple */
+{q:'He did it.',a:'It was done by him.',t:'past',m:1},
+{q:'They bought toys.',a:'Toys were bought by them.',t:'past',m:1},
+{q:'She helped me.',a:'I was helped by her.',t:'past',m:1},
+{q:'He stole my book.',a:'My book was stolen by him.',t:'past',m:1},
+{q:'My father helped him.',a:'He was helped by my father.',t:'past',m:1},
+{q:'The hunter killed the lion.',a:'The lion was killed by the hunter.',t:'past',m:1},
+{q:'Columbus discovered America.',a:'America was discovered by Columbus.',t:'past',m:1},
+{q:'The police caught the thief.',a:'The thief was caught by the police.',t:'past',m:1},
+{q:'Someone stole my pen.',a:'My pen was stolen.',t:'past',m:1},
+{q:'They invited me to the party.',a:'I was invited to the party by them.',t:'past',m:1},
+/* Past Cont */
+{q:'I was doing the work.',a:'The work was being done by me.',t:'past',m:1},
+{q:'He was reading a book.',a:'A book was being read by him.',t:'past',m:1},
+{q:'They were calling the boys.',a:'The boys were being called by them.',t:'past',m:1},
+{q:'Were the boys throwing stones?',a:'Were stones being thrown by the boys?',t:'past',m:2},
+{q:'She was writing a letter.',a:'A letter was being written by her.',t:'past',m:1},
+/* Past Perfect */
+{q:'They had done the work.',a:'The work had been done by them.',t:'past',m:1},
+{q:'We had won the match.',a:'The match had been won by us.',t:'past',m:1},
+{q:'She had sewn the cloth.',a:'The cloth had been sewn by her.',t:'past',m:1},
+{q:'Had you lent the book?',a:'Had the book been lent by you?',t:'past',m:2},
+{q:'He had finished the job.',a:'The job had been finished by him.',t:'past',m:1},
+/* Future */
+{q:'I shall do it.',a:'It will/shall be done by me.',t:'future',m:1},
+{q:'He will do the work.',a:'The work will be done by him.',t:'future',m:1},
+{q:'I shall buy a house.',a:'A house will be bought by me.',t:'future',m:1},
+{q:'He will not hurt you.',a:'You will not be hurt by him.',t:'future',m:1},
+{q:'Shall we help her?',a:'Will she be helped by us?',t:'future',m:2},
+{q:'They will open a new shop.',a:'A new shop will be opened by them.',t:'future',m:1},
+{q:'Mr Roy will have taught this class.',a:'This class will have been taught by Mr Roy.',t:'future',m:2},
+{q:'I shall have written the letter.',a:'The letter will have been written by me.',t:'future',m:2},
+{q:'She will have drawn the picture.',a:'The picture will have been drawn by her.',t:'future',m:2},
+{q:'Will they finish the work?',a:'Will the work be finished by them?',t:'future',m:2},
+/* Modals */
+{q:'He can do the work.',a:'The work can be done by him.',t:'modal',m:1},
+{q:'We may help her.',a:'She may be helped by us.',t:'modal',m:1},
+{q:'You must take this medicine.',a:'This medicine must be taken by you.',t:'modal',m:1},
+{q:'The boy should read the book.',a:'The book should be read by the boy.',t:'modal',m:1},
+{q:'He might take your help.',a:'Your help might be taken by him.',t:'modal',m:1},
+{q:'You ought to obey your parents.',a:'Your parents ought to be obeyed by you.',t:'modal',m:1},
+{q:'We must help the poor.',a:'The poor must be helped by us.',t:'modal',m:1},
+{q:'She can solve the problem.',a:'The problem can be solved by her.',t:'modal',m:1},
+{q:'They may cancel the match.',a:'The match may be cancelled by them.',t:'modal',m:1},
+{q:'You should not waste time.',a:'Time should not be wasted by you.',t:'modal',m:1},
+/* Interrogative */
+{q:'Do you know him?',a:'Is he known to you?',t:'inter',m:2},
+{q:'Does he want this?',a:'Is this wanted by him?',t:'inter',m:2},
+{q:'Did he take tea?',a:'Was tea taken by him?',t:'inter',m:2},
+{q:'Was he taking tea?',a:'Was tea being taken by him?',t:'inter',m:2},
+{q:'Are you reading the book?',a:'Is the book being read by you?',t:'inter',m:2},
+{q:'Have you done the work?',a:'Has the work been done by you?',t:'inter',m:2},
+{q:'Where did you see him?',a:'Where was he seen by you?',t:'inter',m:2},
+{q:'Who will do the work?',a:'By whom will the work be done?',t:'inter',m:2},
+{q:'What did they do?',a:'What was done by them?',t:'inter',m:2},
+{q:'Why have you bought this?',a:'Why has this been bought by you?',t:'inter',m:2},
+{q:'Who saw the man there?',a:'By whom was the man seen there?',t:'inter',m:2},
+{q:'When will you make it?',a:'When will it be made by you?',t:'inter',m:2},
+{q:'Who wrote this letter?',a:'By whom was this letter written?',t:'inter',m:2},
+{q:'What are you doing?',a:'What is being done by you?',t:'inter',m:2},
+{q:'Did she help the boy?',a:'Was the boy helped by her?',t:'inter',m:2},
+/* Imperative */
+{q:'Do it.',a:'Let it be done.',t:'imp',m:1},
+{q:'Tell him to go.',a:'Let him be told to go. / He should be told to go.',t:'imp',m:2},
+{q:'Keep your word.',a:'Your word should be kept.',t:'imp',m:1},
+{q:'Put up a tent.',a:'Have a tent put up.',t:'imp',m:2},
+{q:'Please keep off the grass.',a:'You are requested to keep off the grass.',t:'imp',m:2},
+{q:'Enter by this door.',a:'You are requested to enter by this door.',t:'imp',m:2},
+{q:'Help the poor.',a:'The poor should be helped.',t:'imp',m:1},
+{q:'Take the medicine regularly.',a:'The medicine should be taken regularly.',t:'imp',m:1},
+{q:'Take your slate.',a:'Let your slate be taken.',t:'imp',m:1},
+{q:'Open the door.',a:'Let the door be opened.',t:'imp',m:1},
+{q:'Do not waste water.',a:'Let water not be wasted. / Water should not be wasted.',t:'imp',m:2},
+{q:'Please post this letter.',a:'You are requested to post this letter.',t:'imp',m:2},
+/* Infinitive */
+{q:'I am to buy a book.',a:'A book is to be bought by me.',t:'inf',m:2},
+{q:'I have to do the work.',a:'The work has to be done by me.',t:'inf',m:2},
+{q:'It is time to tell him the truth.',a:'It is time for the truth to be told to him.',t:'inf',m:2},
+{q:'You are to post the letters today.',a:'The letters are to be posted by you today.',t:'inf',m:2},
+{q:'He has no money to spend.',a:'There is no money to be spent by him.',t:'inf',m:2},
+{q:'She is to write a letter.',a:'A letter is to be written by her.',t:'inf',m:2},
+{q:'We have to finish the job.',a:'The job has to be finished by us.',t:'inf',m:2},
+{q:'They are to build a bridge.',a:'A bridge is to be built by them.',t:'inf',m:2},
+/* Preposition verbs */
+{q:'His conduct annoyed me.',a:'I was annoyed at his conduct.',t:'prep',m:2},
+{q:'This news will please you.',a:'You will be pleased with this news.',t:'prep',m:2},
+{q:'His behaviour charmed me.',a:'I was charmed at his behaviour.',t:'prep',m:2},
+{q:'Smoke filled the room.',a:'The room was filled with smoke.',t:'prep',m:2},
+{q:'I know him.',a:'He is known to me.',t:'prep',m:1},
+{q:'His result surprised me.',a:'I was surprised at his result.',t:'prep',m:2},
+{q:'They laughed at us.',a:'We were laughed at by them.',t:'prep',m:2},
+{q:'They laughed at me.',a:'I was laughed at by them.',t:'prep',m:2},
+{q:'He prevailed on me to go.',a:'I was prevailed on by him to go.',t:'prep',m:2},
+{q:'Someone knocked at the door.',a:'The door was knocked at.',t:'prep',m:2},
+/* Two objects */
+{q:'He gave me a book.',a:'I was given a book by him. / A book was given me by him.',t:'twoobj',m:2},
+{q:'He told me the story.',a:'I was told the story by him. / The story was told me by him.',t:'twoobj',m:2},
+{q:'They sent me a box.',a:'I was sent a box by them. / A box was sent me by them.',t:'twoobj',m:2},
+{q:'I shall give him a book.',a:'He will be given a book by me. / A book will be given him by me.',t:'twoobj',m:2},
+{q:'She gave me two cups.',a:'I was given two cups by her.',t:'twoobj',m:2},
+{q:'I promised him a reward.',a:'He was promised a reward by me.',t:'twoobj',m:2},
+{q:'They asked him a few questions.',a:'He was asked a few questions by them.',t:'twoobj',m:2},
+{q:'He teaches us English.',a:'We are taught English by him. / English is taught us by him.',t:'twoobj',m:2},
+{q:'We made him President.',a:'He was made President by us.',t:'twoobj',m:2},
+{q:'They elected him secretary.',a:'He was elected secretary by them.',t:'twoobj',m:2},
+/* Passive → Active */
+{q:'It is known to all.',a:'All/Everybody know(s) it.',t:'p2a',m:1},
+{q:'He is called Netaji.',a:'People call him Netaji.',t:'p2a',m:1},
+{q:'He was punished by the teacher.',a:'The teacher punished him.',t:'p2a',m:1},
+{q:'It was seen there.',a:'Someone saw it there.',t:'p2a',m:1},
+{q:'The man was seen walking there.',a:'Someone saw the man walking there.',t:'p2a',m:2},
+{q:'He was punished for misconduct.',a:'Someone punished him for misconduct.',t:'p2a',m:1},
+{q:'My book has been lost.',a:'I have lost my book. / Someone has lost my book.',t:'p2a',m:1},
+{q:'The promise was broken.',a:'Someone broke the promise.',t:'p2a',m:1},
+{q:'My watch has been stolen.',a:'Someone has stolen my watch.',t:'p2a',m:1},
+{q:'This book must be read by every student.',a:'Every student must read this book.',t:'p2a',m:2},
+{q:'The thief was caught by the police.',a:'The police caught the thief.',t:'p2a',m:1},
+{q:'She was given a book by her father.',a:'Her father gave her a book.',t:'p2a',m:2},
+{q:'The tree has been uprooted.',a:'A strong wind / Someone has uprooted the tree.',t:'p2a',m:1},
+{q:'The door should be kept closed.',a:'You should keep the door closed.',t:'p2a',m:2},
+{q:'My suggestion was not accepted.',a:'They did not accept my suggestion.',t:'p2a',m:1},
+{q:'Silence must be maintained in the library.',a:'Readers must maintain silence in the library.',t:'p2a',m:2},
+{q:'It is said that he is a spy.',a:'People say that he is a spy.',t:'p2a',m:2},
+{q:'Was the book bought by you?',a:'Did you buy the book?',t:'p2a',m:2},
+{q:'Let the game be finished.',a:'Finish the game.',t:'p2a',m:1},
+{q:'Trespassers will be prosecuted.',a:'The authorities will prosecute the trespassers.',t:'p2a',m:2},
+/* Complex / group / misc */
+{q:'He says that he knows you.',a:'It is said by him that you are known to him.',t:'complex',m:2},
+{q:'I thought that you did it.',a:'It was thought by me that it was done by you.',t:'complex',m:2},
+{q:'They fought a good fight.',a:'A good fight was fought by them.',t:'complex',m:1},
+{q:'He has brought out a new book.',a:'A new book has been brought out by him.',t:'complex',m:2},
+{q:'They carried on the work.',a:'The work was carried on by them.',t:'complex',m:2},
+{q:'A strong wind blew down the shed.',a:'The shed was blown down by a strong wind.',t:'complex',m:2},
+{q:'This must have been done by the naughty boy.',a:'The naughty boy must have done this.',t:'complex',m:2},
+{q:'Listen to me.',a:'I should be listened to.',t:'imp',m:2},
+{q:'Please keep the book on the table.',a:'You are requested to keep the book on the table.',t:'imp',m:2},
+{q:'People say that he is the best boy.',a:'It is said that he is the best boy.',t:'p2a',m:2},
+{q:'We know that the earth is round.',a:'It is known that the earth is round.',t:'complex',m:2},
+{q:'Arabic is spoken in Egypt.',a:'People in Egypt speak Arabic.',t:'p2a',m:1},
+{q:'The food will be served soon.',a:'Someone will serve the food soon.',t:'p2a',m:1},
+{q:'They will not be allowed to enter.',a:'We will not allow them to enter.',t:'p2a',m:2},
+{q:'He was awarded a gold medal.',a:'They awarded him a gold medal.',t:'p2a',m:1},
+{q:'Evening dress must be worn.',a:'Guests must wear evening dress.',t:'p2a',m:2},
+{q:'A promise should be kept.',a:'One should keep one\'s promise.',t:'p2a',m:1},
+{q:'Nothing can be gained without labour.',a:'We can gain nothing without labour.',t:'p2a',m:2},
+{q:'Why was he refused admittance?',a:'Why did they refuse him admittance?',t:'p2a',m:2},
+{q:'Indiscipline should not be encouraged.',a:'We should not encourage indiscipline.',t:'p2a',m:2},
+{q:'I was obliged to go.',a:'Circumstances obliged me to go.',t:'p2a',m:2},
+{q:'The club was established in 1957.',a:'They established the club in 1957.',t:'p2a',m:1},
+{q:'You are expected to be faithful.',a:'We expect you to be faithful.',t:'p2a',m:2},
+{q:'He sent me a present.',a:'A present was sent to me by him. / I was sent a present by him.',t:'twoobj',m:2},
+{q:'They hoped to win the match.',a:'It was hoped by them that they would win the match.',t:'complex',m:2},
+{q:'They speak French.',a:'French is spoken by them.',t:'present',m:1},
+{q:'Did you send the book?',a:'Was the book sent by you?',t:'inter',m:2},
+{q:'She was reading a book.',a:'A book was being read by her.',t:'past',m:1},
+{q:'We use this house very rarely.',a:'This house is used very rarely by us.',t:'present',m:1},
+{q:'Someone will serve the food soon.',a:'The food will be served soon.',t:'future',m:1},
+{q:'We will not allow them to enter the room.',a:'They will not be allowed to enter the room.',t:'future',m:2},
+{q:'The servant cooked our food.',a:'Our food was cooked by the servant.',t:'past',m:1},
+{q:'I must do it.',a:'It must be done by me.',t:'modal',m:1},
+{q:'He is flying a kite.',a:'A kite is being flown by him.',t:'present',m:1},
+{q:'Never was he deceived.',a:'Nothing could ever deceive him.',t:'p2a',m:2},
+{q:'Nobody has seen her smile.',a:'She has not been seen by anybody to smile.',t:'p2a',m:2},
+{q:'The damaged house was pulled down.',a:'Someone pulled down the damaged house.',t:'p2a',m:1},
+{q:'How were we to do it?',a:'How was it to be done by us?',t:'inf',m:2},
+{q:'Why didn\'t they help him?',a:'Why was he not helped by them?',t:'inter',m:2},
+{q:'The children said that they did not know him.',a:'It was said by the children that he was not known to them.',t:'complex',m:2},
+{q:'They are burning out the entire forest.',a:'The entire forest is being burnt out by them.',t:'present',m:2},
+{q:'I cannot understand why he does this.',a:'Why this is done by him cannot be understood by me.',t:'complex',m:2},
+{q:'The book was placed upon the table.',a:'Someone placed the book upon the table.',t:'p2a',m:1},
+{q:'It was done in time.',a:'Someone did it in time.',t:'p2a',m:1},
+{q:'I knew that he had done it.',a:'It was known to me that it had been done by him.',t:'complex',m:2},
+{q:'The lion is called the king of beasts.',a:'People call the lion the king of beasts.',t:'p2a',m:1},
+{q:'He knows that it was done by me.',a:'It is known to him that I did it.',t:'complex',m:2},
+{q:'It is said that he saved the boy.',a:'People say that the boy was saved by him.',t:'complex',m:2},
+{q:'It is expected that he will win the prize.',a:'People expect that the prize will be won by him.',t:'complex',m:2},
+{q:'I shall help you if it is done in time.',a:'You will be helped by me if it is done in time.',t:'complex',m:2},
+{q:'They beat the thief when he was caught.',a:'The thief was beaten by them when he was caught.',t:'complex',m:2},
+{q:'I know that the lion is called the king of beasts.',a:'It is known to me that the lion is called the king of beasts.',t:'complex',m:2},
+{q:'He was called out by his friends.',a:'His friends called him out.',t:'p2a',m:1},
+{q:'They have worked out the sum.',a:'The sum has been worked out by them.',t:'present',m:2},
+{q:'He dispensed with my services.',a:'My services were dispensed with by him.',t:'prep',m:2},
+{q:'The race was run yesterday.',a:'Someone ran the race yesterday.',t:'p2a',m:1},
+{q:'The battle was fought at this place.',a:'They fought the battle at this place.',t:'p2a',m:1},
+{q:'This book reads well.',a:'(Quasi-passive — keep as is / is good when read)',t:'complex',m:2},
+{q:'He is gone.',a:'(Not Passive — alternative to He has gone)',t:'complex',m:1},
+{q:'Passengers are requested not to smoke.',a:'We request passengers not to smoke.',t:'p2a',m:2},
+{q:'Calcutta was lashed by a thunder shower.',a:'A thunder shower lashed Calcutta.',t:'p2a',m:1},
+{q:'America was discovered by Columbus.',a:'Columbus discovered America.',t:'p2a',m:1},
+{q:'A man was knocked down by a lorry.',a:'A lorry knocked down a man.',t:'p2a',m:1},
+{q:'The fine textiles are made in India.',a:'People/Workers make the fine textiles in India.',t:'p2a',m:1},
+{q:'You must obey the rules.',a:'The rules must be obeyed by you.',t:'modal',m:1},
+{q:'Does she speak English?',a:'Is English spoken by her?',t:'inter',m:2},
+{q:'Who has broken the glass?',a:'By whom has the glass been broken?',t:'inter',m:2},
+{q:'Shut the window.',a:'Let the window be shut.',t:'imp',m:1},
+{q:'Do not tell a lie.',a:'Let a lie not be told.',t:'imp',m:2},
+{q:'Please help me.',a:'You are requested to help me.',t:'imp',m:1},
+{q:'He may write a letter.',a:'A letter may be written by him.',t:'modal',m:1},
+{q:'We should respect elders.',a:'Elders should be respected by us.',t:'modal',m:1},
+{q:'They will have completed the work.',a:'The work will have been completed by them.',t:'future',m:2},
+{q:'She is teaching the students.',a:'The students are being taught by her.',t:'present',m:1},
+{q:'The teacher has checked the copies.',a:'The copies have been checked by the teacher.',t:'present',m:1},
+{q:'Someone has stolen my bicycle.',a:'My bicycle has been stolen.',t:'present',m:1},
+{q:'The principal will announce the result.',a:'The result will be announced by the principal.',t:'future',m:1},
+{q:'They were repairing the road.',a:'The road was being repaired by them.',t:'past',m:1},
+{q:'Had she finished the homework?',a:'Had the homework been finished by her?',t:'past',m:2},
+{q:'Who can answer this question?',a:'By whom can this question be answered?',t:'inter',m:2},
+{q:'What should we do now?',a:'What should be done by us now?',t:'inter',m:2},
+{q:'Mother gave me a gift.',a:'I was given a gift by mother. / A gift was given me by mother.',t:'twoobj',m:2},
+{q:'Father bought me a bicycle.',a:'I was bought a bicycle by father. / A bicycle was bought for me by father.',t:'twoobj',m:2},
+{q:'The judge found him guilty.',a:'He was found guilty by the judge.',t:'twoobj',m:2},
+{q:'We consider him honest.',a:'He is considered honest by us.',t:'twoobj',m:2},
+{q:'They appointed him manager.',a:'He was appointed manager by them.',t:'twoobj',m:2},
+{q:'Please do not smoke here.',a:'You are requested not to smoke here.',t:'imp',m:2},
+{q:'Let him go.',a:'He should be allowed to go. / Let him be allowed to go.',t:'imp',m:2},
+{q:'It is time to start the work.',a:'It is time for the work to be started.',t:'inf',m:2},
+{q:'There is nothing to do.',a:'There is nothing to be done.',t:'inf',m:1},
+{q:'I have a letter to write.',a:'There is a letter to be written by me.',t:'inf',m:2},
+{q:'The news shocked everyone.',a:'Everyone was shocked at/by the news.',t:'prep',m:2},
+{q:'His honesty impressed me.',a:'I was impressed with/by his honesty.',t:'prep',m:2},
+{q:'They looked after the child.',a:'The child was looked after by them.',t:'prep',m:2},
+{q:'We must look into the matter.',a:'The matter must be looked into by us.',t:'prep',m:2},
+{q:'She put off the meeting.',a:'The meeting was put off by her.',t:'prep',m:2},
+{q:'He turned down the offer.',a:'The offer was turned down by him.',t:'prep',m:2},
+{q:'They called off the strike.',a:'The strike was called off by them.',t:'prep',m:2},
+{q:'We brought up the children carefully.',a:'The children were brought up carefully by us.',t:'prep',m:2},
+{q:'The storm blew down the tree.',a:'The tree was blown down by the storm.',t:'past',m:1},
+{q:'Fire destroyed the building.',a:'The building was destroyed by fire.',t:'past',m:1},
+{q:'The dog bit the boy.',a:'The boy was bitten by the dog.',t:'past',m:1},
+{q:'A car hit the old man.',a:'The old man was hit by a car.',t:'past',m:1},
+{q:'The flood washed away the bridge.',a:'The bridge was washed away by the flood.',t:'past',m:1},
+{q:'Science has changed our lives.',a:'Our lives have been changed by science.',t:'present',m:1},
+{q:'The sun gives us light.',a:'We are given light by the sun. / Light is given us by the sun.',t:'present',m:2},
+{q:'Honesty pays in the long run.',a:'(Intransitive sense — often left Active)',t:'complex',m:1},
+{q:'One should keep one\'s promise.',a:'A promise should be kept.',t:'modal',m:1},
+{q:'We must not encourage indiscipline.',a:'Indiscipline must not be encouraged.',t:'modal',m:2},
+{q:'Someone must have opened the door.',a:'The door must have been opened by someone.',t:'modal',m:2},
+{q:'They might have seen the film.',a:'The film might have been seen by them.',t:'modal',m:2},
+{q:'You ought to have done this.',a:'This ought to have been done by you.',t:'modal',m:2},
+{q:'He used to play cricket.',a:'Cricket used to be played by him.',t:'past',m:2},
+{q:'People speak English all over the world.',a:'English is spoken all over the world.',t:'present',m:1},
+{q:'They grow rice in West Bengal.',a:'Rice is grown in West Bengal.',t:'present',m:1},
+{q:'We celebrate Durga Puja every year.',a:'Durga Puja is celebrated every year.',t:'present',m:1},
+{q:'The government has built many schools.',a:'Many schools have been built by the government.',t:'present',m:1},
+{q:'The doctor will examine the patient.',a:'The patient will be examined by the doctor.',t:'future',m:1},
+{q:'Has anyone informed the police?',a:'Has the police been informed by anyone?',t:'inter',m:2},
+{q:'Why did you leave the door open?',a:'Why was the door left open by you?',t:'inter',m:2},
+{q:'How did they solve the puzzle?',a:'How was the puzzle solved by them?',t:'inter',m:2},
+{q:'Where have they kept the keys?',a:'Where have the keys been kept by them?',t:'inter',m:2},
+{q:'When will she return the book?',a:'When will the book be returned by her?',t:'inter',m:2},
+{q:'Whom did you meet yesterday?',a:'Who was met by you yesterday?',t:'inter',m:2},
+{q:'Which book did he choose?',a:'Which book was chosen by him?',t:'inter',m:2},
+{q:'Whose car is being repaired?',a:'Whose car is being repaired? (already Passive)',t:'inter',m:1}
 ];
-const A2P=[['I must do it.','It must be done by me.'],['He is flying a kite.','A kite is being flown by him.'],['The servant cooked our food.','Our food was cooked by the servant.'],['He sent me a present.','A present was sent to me by him. / I was sent a present by him.'],['They hoped to win the match.','It was hoped by them that they would win the match.'],['They speak French.','French is spoken by them.'],['Did you send the book?','Was the book sent by you?'],['She was reading a book.','A book was being read by her.'],['Someone knocked at the door.','The door was knocked at.'],['Please keep the book on the table.','You are requested to keep the book on the table.'],['They elected him secretary of the club.','He was elected secretary of the club.'],['We use this house very rarely.','This house is used very rarely by us.'],['Someone will serve the food soon.','The food will be served soon.'],['We will not allow them to enter the room.','They will not be allowed to enter the room.'],['People say that he is a spy.','It is said that he is a spy.'],['We know that the earth is round.','It is known that the earth is round.'],['People in Egypt speak Arabic.','Arabic is spoken in Egypt.'],['Listen to me.','I should be listened to.']];
-const P2A=[['This book must be read by every student.','Every student must read this book.'],['The thief was caught by the police.','The police caught the thief.'],['She was given a book by her father.','Her father gave her a book.'],['The tree has been uprooted.','A strong wind has uprooted the tree.'],['My book has been lost.','I have lost my book.'],['The door should be kept closed.','You should keep the door closed.'],['My suggestion was not accepted.','They did not accept my suggestion.'],['Silence must be maintained in the library.','Readers must maintain silence in the library.'],['The club was established in 1957.','They established the club in 1957.'],['It is said that he is the best boy in the class.','People say that he is the best boy in the class.'],['You are expected to be faithful.','We expect you to be faithful.'],['Was the book bought by you?','Did you buy the book?'],['Let the game be finished.','Finish the game.'],['He was awarded a gold medal.','They awarded him a gold medal.'],['Trespassers will be prosecuted.','The authorities will prosecute the trespassers.'],['Evening dress must be worn.','Guests must wear evening dress.'],['It is said that morning shows the day.','Everybody says that morning shows the day.']];
-const LIT=[['They knew that their king would never rest till he understood the matter.','It was known to them that their king would never rest till the matter was understood by him.'],['Never was he deceived.','Nothing could ever deceive him.'],['She taunted her husband with memory of his early promise.','Her husband was taunted by her with the memory of his early promise.'],['Nobody has seen her smile.','She has not been seen by anybody to smile.'],['The man to whom this appeal was made swore a dreadful oath.','A dreadful oath was sworn by the man to whom (they) made this appeal.']];
-const GRP=[['In the 14th minute Subhas was fouled by Anjan… first goal was scored by Rabi.','Anjan fouled Subhas… Rabi scored the first goal for Aryans.'],['One terrorist was killed and two others were injured by the police…','The police killed one terrorist and wounded two others…'],['W. Germany was defeated by Argentina 3-2. The spectators were thrilled…','Argentina defeated W. Germany 3-2. The players thrilled the spectators…'],['A 6 year old child was knocked down by a passing vehicle…','A passing vehicle knocked down a 6 year old child…']];
-const PQ=[{q:'The girl knows it.',a:'It is known by/to the girl.'},{q:'He said this to me.',a:'This was said to me by him.'},{q:'I shall do the work.',a:'The work will/shall be done by me.'},{q:'Who saw the man there?',a:'By whom was the man seen there?'},{q:'They laughed at us.',a:'We were laughed at by them.'},{q:'He is called Netaji.',a:'People call him Netaji.'},{q:'Take your slate.',a:'Let your slate be taken.'},{q:'He can do the work.',a:'The work can be done by him.'}];
-const X20=[['The girl knows it.','It is known by/to the girl.'],['He said this to me.','This was said to me by him.'],['I shall do the work.','The work will/shall be done by me.'],['He told me the story.','I was told the story by him. / The story was told me by him.'],['They sent me a box.','I was sent a box by them. / A box was sent me by them.'],['It is known to all.','All/Everybody know(s) it.'],['They have lost the thing.','The thing has been lost by them.'],['When will you make it?','When will it be made by you?'],['I shall give him a book.','He will be given a book by me. / A book will be given him by me.'],['Who saw the man there?','By whom was the man seen there?'],['My father helped him.','He was helped by my father.'],['He is called Netaji.','People call him Netaji.'],['He was punished by the teacher.','The teacher punished him.'],['I promised him a reward.','He was promised a reward by me.'],['They asked him a few questions.','He was asked a few questions by them.'],['It was seen there.','Someone saw it there.'],['The man was seen walking there.','Someone saw the man walking there.'],['He was punished for misconduct.','Someone punished him for misconduct.'],['She gave me two cups.','I was given two cups by her.']];
+
+const EX={present:BANK.filter(x=>x.t==='present').map(x=>[x.q,x.a]),past:BANK.filter(x=>x.t==='past').map(x=>[x.q,x.a]),future:BANK.filter(x=>x.t==='future').map(x=>[x.q,x.a]),modal:BANK.filter(x=>x.t==='modal').map(x=>[x.q,x.a]),inter:BANK.filter(x=>x.t==='inter').map(x=>[x.q,x.a]),imp:BANK.filter(x=>x.t==='imp').map(x=>[x.q,x.a])};
+const X20=BANK.slice(0,19).map(x=>[x.q,x.a]);
 const X21=[['He says that he knows you.','It is said by him that you are known to him.'],['I thought that you did it.','It was thought by me that it was done by you.'],['He knows that it was done by me.','It is known to him that I did it.'],['It is said that he saved the boy.','People say that the boy was saved by him.'],['It is expected that he will win the prize.','People expect that the prize will be won by him.'],['I shall help you if it is done in time.','You will be helped by me if it is done in time.'],['They beat the thief when he was caught.','The thief was beaten by them when he was caught.'],['I know that the lion is called the king of beasts.','It is known to me that the lion is called the king of beasts.'],['They fought a good fight.','A good fight was fought by them.'],['They laughed at me.','I was laughed at by them.'],['He prevailed on me to go there.','I was prevailed on by him to go there.'],['He has brought out a new book.','A new book has been brought out by him.'],['He was called out by his friends.','His friends called him out.'],['They have worked out the sum.','The sum has been worked out by them.'],['They carried on the work.','The work was carried on by them.']];
-const X22A=[['He teaches us English.','We are taught English by him. / English is taught us by him.'],['We made him President.','He was made President by us.'],['The promise was broken.','Someone broke the promise.'],['The lion is called the king of beasts.','People call the lion the king of beasts.'],['Take your slate.','Let your slate be taken.'],['I know that the girl said that.','It is known to me that that was said by the girl.'],['They laughed at us.','We were laughed at by them.'],['My watch has been stolen.','Someone has stolen my watch.'],['The book was placed upon the table.','Someone placed the book upon the table.'],['It was done in time.','Someone did it in time.'],['I knew that he had done it.','It was known to me that it had been done by him.'],['How were we to do it?','How was it to be done by us?'],['It is stupid people who take remarks too literally.','Remarks are taken too literally by stupid people.'],['When you have said a little, give your friend a chance…','When a little has been said by you, let your friend be given a chance…'],['I cannot understand why he does this.','Why this is done by him cannot be understood by me.'],['The children said that they did not know him.','It was said by the children that he was not known to them.'],['We shall either win Troy or shall be found out and die.','Troy shall either be won by us or we shall be found out and die.'],['They are burning out the entire forest.','The entire forest is being burnt out by them.'],['Why didn\'t they help him?','Why was he not helped by them?'],['A strong wind blew down the shed.','The shed was blown down by a strong wind.'],['The door should be kept closed.','You should keep the door closed.'],['The damaged house was pulled down.','Someone pulled down the damaged house.'],['This must have been done by the naughty boy.','The naughty boy must have done this.']];
-const X22B=[{t:'Meeting',x:'The meeting — (preside) over by the CM. It — (attend) by a huge crowd. They — (praise) by the CM…',a:'was presided · was attended · were praised'},{t:'Cricket',x:'The first ball — (play) safely. Ananda — (bowl). His middle stump — (uproot).',a:'was played · was bowled · was uprooted'},{t:'Fox',x:'The fox — (chase) by a dog… it — (find) out by the dog.',a:'was chased · was found'},{t:'Building',x:'The building — (design) by me. Everyone — (excite). I — (given) a prize. It — (damage) last week.',a:'was designed · was excited · was given · was damaged'},{t:'Bird',x:'The bird — (buy) by Dipu. It — (keep) in a cage which — (close). It — (find) that the cage was open…',a:'was bought · was kept · was closed · was found'},{t:'Drug',x:'This drug — (discover) by an Indian scientist. Lives will — (save). This — (announce) by a spokesman.',a:'was discovered · be saved · was announced'},{t:'Africa funds',x:'Over 100 organisations — (collect) funds… collection — (expect)… — (hand) over… Rs.35 lakhs — (collect)…',a:'collected · was expected · would be handed · were collected'},{t:'Artificial heart',x:'Heart — (implant)… which — (keep) Clark alive… — (develop) in Salt Lake City… city — (locate)… — (settle) in 1848…',a:'was implanted · kept · was developed · ranked · is located · was settled'},{t:'Jute',x:'Jute fibre — (obtain) from plant. In India it — (cultivate) in WB. Fertile soil — (require). Field — (plough) and manure — (apply).',a:'is obtained · is cultivated · is required · is ploughed · is applied'}];
-let sc=0,st=0;
-function go(id){document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.bottom button').forEach(b=>b.classList.remove('on'));const n=document.getElementById('nav-'+id);if(n)n.classList.add('on');if(id==='learn')rl();if(id==='examples')se('present');if(id==='special')rs();if(id==='worked')sw('a2p');if(id==='practice')rp();if(id==='exercises')rx();window.scrollTo(0,0)}
+const X22A=[['He teaches us English.','We are taught English by him.'],['We made him President.','He was made President by us.'],['The promise was broken.','Someone broke the promise.'],['The lion is called the king of beasts.','People call the lion the king of beasts.'],['Take your slate.','Let your slate be taken.'],['I know that the girl said that.','It is known to me that that was said by the girl.'],['They laughed at us.','We were laughed at by them.'],['My watch has been stolen.','Someone has stolen my watch.'],['The book was placed upon the table.','Someone placed the book upon the table.'],['It was done in time.','Someone did it in time.'],['I knew that he had done it.','It was known to me that it had been done by him.'],['How were we to do it?','How was it to be done by us?'],['Why didn\'t they help him?','Why was he not helped by them?'],['A strong wind blew down the shed.','The shed was blown down by a strong wind.'],['The door should be kept closed.','You should keep the door closed.'],['The damaged house was pulled down.','Someone pulled down the damaged house.'],['This must have been done by the naughty boy.','The naughty boy must have done this.'],['They are burning out the entire forest.','The entire forest is being burnt out by them.'],['My suggestion was not accepted.','They did not accept my suggestion.'],['Silence must be maintained.','Readers must maintain silence.'],['Let the game be finished.','Finish the game.'],['Trespassers will be prosecuted.','The authorities will prosecute trespassers.'],['He was awarded a gold medal.','They awarded him a gold medal.']];
+const X22B=[{t:'Meeting',x:'The meeting — (preside) over by the CM…',a:'was presided · was attended · were praised'},{t:'Cricket',x:'The first ball — (play)… Ananda — (bowl)… stump — (uproot).',a:'was played · was bowled · was uprooted'},{t:'Jute',x:'Jute fibre — (obtain)… — (cultivate)… soil — (require)…',a:'is obtained · is cultivated · is required'},{t:'Drug',x:'Drug — (discover)… Lives will — (save)… — (announce)…',a:'was discovered · be saved · was announced'},{t:'Heart',x:'Heart — (implant)… — (keep)… — (develop)… city — (locate)…',a:'was implanted · kept · was developed · is located'},{t:'Bird',x:'Bird — (buy)… — (keep)… cage — (close)… — (find)…',a:'was bought · was kept · was closed · was found'},{t:'Building',x:'Building — (design)… Everyone — (excite)… I — (given)… — (damage)…',a:'was designed · was excited · was given · was damaged'},{t:'Funds',x:'Organisations — (collect)… collection — (expect)… — (hand) over…',a:'collected · was expected · would be handed'},{t:'Fox',x:'Fox — (chase)… — (find) out…',a:'was chased · was found'}];
+
+let examQ=[],examI=0,examScore=0,examMax=0,examShowFlag=true;
+
+function go(id){
+ document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+ document.getElementById(id).classList.add('active');
+ document.querySelectorAll('.bottom button').forEach(b=>b.classList.remove('on'));
+ const n=document.getElementById('nav-'+id);if(n)n.classList.add('on');
+ if(id==='learn')rl();
+ if(id==='examples')se('present');
+ if(id==='special')rs();
+ if(id==='bank')rb('all');
+ if(id==='exam'){document.getElementById('examSetup').style.display='block';document.getElementById('examRun').style.display='none';document.getElementById('examResult').style.display='none'}
+ if(id==='exercises')rx();
+ window.scrollTo(0,0);
+}
 function rl(){const ks=Object.keys(L);document.getElementById('lnav').innerHTML=ks.map((k,i)=>`<button class="${i===0?'on':''}" onclick="sl('${k}',this)">${k}</button>`).join('');sl(ks[0])}
 function sl(k,b){if(b){document.querySelectorAll('#lnav button').forEach(x=>x.classList.remove('on'));b.classList.add('on')}const x=L[k];document.getElementById('lbody').innerHTML=`<div class="box"><h3>${x.t}</h3><pre>${x.en}</pre><div class="bn">${x.bn}</div></div>`}
-function se(key,b){if(b){document.querySelectorAll('#epills button').forEach(x=>x.classList.remove('on'));b.classList.add('on')}const keys=Object.keys(EX);if(!document.getElementById('epills').dataset.ready){document.getElementById('epills').innerHTML=keys.map((k,i)=>`<button class="${k===key?'on':''}" onclick="se('${k}',this)">${k}</button>`).join('');document.getElementById('epills').dataset.ready=1}const list=EX[key]||[];document.getElementById('ebody').innerHTML=list.map(([a,p])=>`<div class="ex">A: ${a}<div class="pas">P: ${p}</div></div>`).join('')}
-function rs(){document.getElementById('sbody').innerHTML=SP.map(s=>{if(s.x)return `<div class="box"><h3>${s.h}</h3>${s.x.map(([a,p])=>`<div class="ex">A: ${a}<div class="pas">P: ${p}</div></div>`).join('')}</div>`;return `<div class="box"><h3>${s.h}</h3><pre>${s.txt}</pre></div>`}).join('')}
-function sw(k,b){if(b){document.querySelectorAll('#worked .nav-pills button').forEach(x=>x.classList.remove('on'));b.classList.add('on')}const m={a2p:A2P,p2a:P2A,lit:LIT,grp:GRP};const list=m[k]||[];document.getElementById('wbody').innerHTML=list.map(([a,p])=>`<div class="ex">${a}<div class="pas">→ ${p}</div></div>`).join('')}
-function rp(){document.getElementById('pbody').innerHTML=PQ.map((q,i)=>`<div class="q-item"><b>${i+1}. ${q.q}</b><br><button class="btn-sm" onclick="document.getElementById('pa${i}').classList.toggle('show');st++;document.getElementById('sc').textContent=sc+'/'+st">Show</button><div class="ans" id="pa${i}">${q.a}</div></div>`).join('')}
-function rx(){const mk=(arr,id)=>{document.getElementById(id).innerHTML=arr.map((x,i)=>`<div class="q-item"><b>${i+1}.</b> ${x[0]}<br><button class="btn-sm" onclick="this.nextElementSibling.classList.toggle('show')">Answer</button><div class="ans">${x[1]}</div></div>`).join('')};mk(X20,'x20');mk(X21,'x21');mk(X22A,'x22a');document.getElementById('x22b').innerHTML=X22B.map(p=>`<div class="q-item"><b>${p.t}</b><p style="font-size:.85rem;margin:4px 0">${p.x}</p><button class="btn-sm" onclick="this.nextElementSibling.classList.toggle('show')">Answers</button><div class="ans">${p.a}</div></div>`).join('')}
+function se(key,b){if(b){document.querySelectorAll('#epills button').forEach(x=>x.classList.remove('on'));b.classList.add('on')}const keys=Object.keys(EX);if(!document.getElementById('epills').dataset.r){document.getElementById('epills').innerHTML=keys.map(k=>`<button class="${k===key?'on':''}" onclick="se('${k}',this)">${k}</button>`).join('');document.getElementById('epills').dataset.r=1}document.getElementById('ebody').innerHTML=(EX[key]||[]).map(([a,p])=>`<div class="ex">A: ${a}<div class="pas">P: ${p}</div></div>`).join('')}
+function rs(){document.getElementById('sbody').innerHTML=`<div class="box"><h3>§197–205</h3><div class="ex">Two objects · Complex · Group verbs · Double passive AVOID · Reflexive/Avail · Imperative · Infinitive · Quasi-passive · When to use Passive</div><p class="bn">বিস্তারিত Learn ট্যাবে ১৯৭–২০৬</p></div>`}
+function rb(filter){
+ const types=['all','present','past','future','modal','inter','imp','inf','prep','twoobj','p2a','complex'];
+ if(!document.getElementById('bfilter').dataset.r){
+ document.getElementById('bfilter').innerHTML=types.map(t=>`<button class="${t==='all'?'on':''}" onclick="rb('${t}');document.querySelectorAll('#bfilter button').forEach(b=>b.classList.remove('on'));this.classList.add('on')">${t}</button>`).join('');
+ document.getElementById('bfilter').dataset.r=1;
+ }
+ const list=filter==='all'?BANK:BANK.filter(x=>x.t===filter);
+ document.getElementById('bankN').textContent=list.length;
+ document.getElementById('bbody').innerHTML=list.map((x,i)=>`<div class="q-item"><b>${i+1}.</b> ${x.q} <span class="type">${x.t}</span> <span class="mark">${x.m}m</span><br><button class="btn-sm" onclick="this.nextElementSibling.classList.toggle('show')">Show Answer</button><div class="ans"><b>Ans:</b> ${x.a}</div></div>`).join('');
+}
+function startExam(){
+ const type=document.getElementById('examType').value;
+ const n=+document.getElementById('examN').value;
+ const m=+document.getElementById('examM').value;
+ examShowFlag=document.getElementById('examShow').checked;
+ let pool=type==='mix'?[...BANK]:BANK.filter(x=>x.t===type);
+ if(pool.length<n)pool=[...BANK];
+ // shuffle
+ for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]]}
+ examQ=pool.slice(0,n).map(x=>({...x,m}));
+ examI=0;examScore=0;examMax=n*m;
+ document.getElementById('examSetup').style.display='none';
+ document.getElementById('examResult').style.display='none';
+ document.getElementById('examRun').style.display='block';
+ document.getElementById('eqT').textContent=n;
+ document.getElementById('eMax').textContent=examMax;
+ document.getElementById('eScore').textContent=0;
+ showExamQ();
+}
+function showExamQ(){
+ if(examI>=examQ.length){endExam();return}
+ const x=examQ[examI];
+ document.getElementById('eqN').textContent=examI+1;
+ document.getElementById('eqBody').innerHTML=`<div class="q-item" style="font-size:1rem"><b>Change the voice:</b><br><br>${x.q}<br><span class="type">${x.t}</span> <span class="mark">${x.m} marks</span><div class="ans" id="eAns"><b>Answer:</b> ${x.a}</div></div>`;
+}
+function examShowAns(){document.getElementById('eAns').classList.add('show')}
+function examMark(ok){
+ if(ok)examScore+=examQ[examI].m;
+ document.getElementById('eScore').textContent=examScore;
+ examI++;
+ showExamQ();
+}
+function endExam(){
+ document.getElementById('examRun').style.display='none';
+ const pct=Math.round(examScore/examMax*100);
+ let grade=pct>=80?'Excellent 🌟':pct>=60?'Good ✓':pct>=40?'Average':'Need more practice';
+ document.getElementById('examResult').style.display='block';
+ document.getElementById('examResult').innerHTML=`<div class="result-box"><div class="big">${examScore}/${examMax}</div><p>${pct}% · ${grade}</p><button class="btn" style="margin-top:12px" onclick="go('exam')">New Exam</button> <button class="btn-sm" onclick="go('bank')">Review Bank</button></div>`;
+}
+function rx(){
+ const mk=(arr,id)=>{document.getElementById(id).innerHTML=arr.map((x,i)=>`<div class="q-item"><b>${i+1}.</b> ${x[0]}<br><button class="btn-sm" onclick="this.nextElementSibling.classList.toggle('show')">Show Answer</button><div class="ans">${x[1]}</div></div>`).join('')};
+ mk(X20,'x20');mk(X21,'x21');mk(X22A,'x22a');
+ document.getElementById('x22b').innerHTML=X22B.map(p=>`<div class="q-item"><b>${p.t}</b><p style="font-size:.85rem">${p.x}</p><button class="btn-sm" onclick="this.nextElementSibling.classList.toggle('show')">Answers</button><div class="ans">${p.a}</div></div>`).join('');
+}
+document.getElementById('qcount').textContent=BANK.length;
 rl();
 </script>
 </body>
